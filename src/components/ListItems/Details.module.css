@@ -1,0 +1,95 @@
+.list-wrapper {
+  list-style: none;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 34px;
+  overflow-y: scroll;
+  height: 50vh;
+  scrollbar-width: thin;
+  animation: search-appear 1s ease-out forwards;
+}
+
+.list-wrapper li {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.list-wrapper li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.audio {
+  margin-top: 8px;
+}
+
+.subtitle {
+  margin-top: 30px;
+  margin-left: 36px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.word {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.word p {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.word span {
+  font-size: 15px;
+  color: #989898;
+  text-align: center;
+}
+
+.content li .details {
+  padding-left: 8px;
+  border-radius: 4px 0 0 4px;
+  border-left: 3px solid rgb(209, 37, 209);
+}
+
+.content li .details p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.content li .details div {
+  font-size: 16px;
+  color: #7e7e7e;
+}
+
+.mapped-list {
+  margin-bottom: 20px;
+}
+
+.details .mapped-list:last-child {
+  margin-bottom: 0px;
+}
+
+.synonyms div {
+  cursor: pointer;
+}
+
+@keyframes search-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
